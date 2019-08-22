@@ -1,0 +1,42 @@
+Verkefni 1 - 5% JavaScript.
+1. Hvað er null og undefined?
+Null er empty object meðan undefined er til en hefur ekki verið declaraður
+2. Hvað gerir 'use strict' í JavaScript kóða?
+use strict stoppar javascript að breyta einhverju og allt mun virka
+
+3. Hver er munurinn á let, var og const?
+var virkar allstaðar í functioni meðan let og const virkar bara í for loopu og munnurinn milli const og let er að þú getur ekki breyt const þegar þú ert buinn að declara hann.
+
+
+4. Endurskrifaðu eftirfarandi kóða með for lykkjunni.
+let x = 9;
+while (x >= 1) {
+ console.log("hello " + x);
+ x = x - 1;
+}
+let number = 9;
+for (let i = 1; number >= i; i++) {
+   
+   console.log("hello " + i ); 
+  if (number == i)
+  	console.log(0)
+}
+
+5. Skilgreindu sama fallið á þrjá mismunandi vegu.
+6. Útskýrðu hvað eftirfarandi kóði gerir, hvað gera svigarnir?
+ (function() { alert('Hello World'); })();
+7. Af hverju birtist 1 en ekki 10?
+Í hvaða röð er kóðinn keyrður í raun eftir að JS þýðandinn (e. interpreter) er búinn að fá
+hann til sín? Raðaðu kóðanum rétt fyrir JS þýðandann.
+"use strict";
+let a = 1;
+function b() {
+ a = 10;
+ return;
+ function a() {}
+}
+b();
+console.log(a);
+8. Leystu lið 20 í Lesson 6 (Arrays) á Udacity https://classroom.udacity.com/courses/ud803
+9. Leystu lið 22 í Lesson 6 (Arrays) á Udacity https://classroom.udacity.com/courses/ud803
+10. Skrifaðu forrit í JavaScript sem sprengir staflan (stack overflow).
