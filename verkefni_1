@@ -7,24 +7,33 @@ use strict stoppar javascript að breyta einhverju og allt mun virka
 3. Hver er munurinn á let, var og const?
 var virkar allstaðar í functioni meðan let og const virkar bara í for loopu og munnurinn milli const og let er að þú getur ekki breyt const þegar þú ert buinn að declara hann.
 
-
 4. Endurskrifaðu eftirfarandi kóða með for lykkjunni.
 let x = 9;
 while (x >= 1) {
  console.log("hello " + x);
  x = x - 1;
 }
-let number = 9;
-for (let i = 1; number >= i; i++) {
-   
-   console.log("hello " + i ); 
-  if (number == i)
-  	console.log(0)
-}
+let number = 0;
+for (let i = 9; number < i; i--){
+ if (i == number ) {console.log(number)} 
+ else {console.log("hello " + i )}
+};
 
 5. Skilgreindu sama fallið á þrjá mismunandi vegu.
+1
+
+2
+
+3
+
 6. Útskýrðu hvað eftirfarandi kóði gerir, hvað gera svigarnir?
  (function() { alert('Hello World'); })();
+
+ 1(function() 2{ alert('Hello World'); }2  )1  ()3;
+ 
+ kóðinn kallar á alert sem seigir Hello World,1 svigarnir heldur um koðan. 2 er functionið sjálft. 3 keyrir koðan.
+ 
+ 
 7. Af hverju birtist 1 en ekki 10?
 Í hvaða röð er kóðinn keyrður í raun eftir að JS þýðandinn (e. interpreter) er búinn að fá
 hann til sín? Raðaðu kóðanum rétt fyrir JS þýðandann.
@@ -37,6 +46,9 @@ function b() {
 }
 b();
 console.log(a);
+af því að a er declaraður sem 1.
+
+
 8. Leystu lið 20 í Lesson 6 (Arrays) á Udacity https://classroom.udacity.com/courses/ud803
 9. Leystu lið 22 í Lesson 6 (Arrays) á Udacity https://classroom.udacity.com/courses/ud803
 10. Skrifaðu forrit í JavaScript sem sprengir staflan (stack overflow).
