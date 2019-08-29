@@ -20,11 +20,15 @@ for (let i = 9; number < i; i--){
 };
 
 5. Skilgreindu sama fallið á þrjá mismunandi vegu.
-1
+1 
+let summ = function(a, b) {
+  return a * b;
+};
+alert( sum(1, 2) );
+2 
+let sum = (a, b) => a * b;
+alert( sum(1, 2) );
 
-2
-
-3
 
 6. Útskýrðu hvað eftirfarandi kóði gerir, hvað gera svigarnir?
  (function() { alert('Hello World'); })();
@@ -50,5 +54,35 @@ af því að a er declaraður sem 1.
 
 
 8. Leystu lið 20 í Lesson 6 (Arrays) á Udacity https://classroom.udacity.com/courses/ud803
+var test = [12, 929, 11, 3, 199, 1000, 7, 1, 24, 37, 4,
+    19, 300, 3775, 299, 36, 209, 148, 169, 299,
+    6, 109, 20, 58, 139, 59, 3, 1, 139
+];
+
+// Write your code here
+test.forEach(function(a, b, c)
+{
+  if(a % 3 == 0)
+  {
+    c[b] = a += 100; 
+  }
+}
+);
 9. Leystu lið 22 í Lesson 6 (Arrays) á Udacity https://classroom.udacity.com/courses/ud803
+var bills = [50.23, 19.12, 34.01,
+    100.11, 12.15, 9.90, 29.11, 12.99,
+    10.00, 99.22, 102.20, 100.10, 6.77, 2.22
+];
+var totals = bills.map(function(bill) 
+{
+  bill = bill * 0.15 + bill; 
+  return Number(bill.toFixed(2)); 
+}
+);
+console.log(totals);
 10. Skrifaðu forrit í JavaScript sem sprengir staflan (stack overflow).
+function hallo()
+{  
+hallo();
+}
+hallo();
