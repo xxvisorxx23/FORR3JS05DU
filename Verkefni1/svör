@@ -51,7 +51,7 @@ function b() {
 }
 b();
 console.log(a);
-af því að a er declaraður sem 1.
+af því að a er declaraður sem 1 fyrir utan scopið function b. 
 
 
 8. Leystu lið 20 í Lesson 6 (Arrays) á Udacity https://classroom.udacity.com/courses/ud803
