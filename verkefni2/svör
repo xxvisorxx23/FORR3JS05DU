@@ -16,7 +16,8 @@ for (let key in eg) {
 }
 3. Bættu við aðferð í objectið sem þú gerðir í lið 1. Aðferðin á að skila streng sem inniheldur
 nafn og aldur.
-
+eg.nafn = "kristjan"
+eg.aldur = "22"
 
 4. Prentaðu út með console.log() Nonni.
 let family = {
@@ -62,12 +63,27 @@ var savingsAccount = {
 console.log(savingsAccount.printAccountSummary());
 
 7. Leystu lið 12 í lesson 7 - Objects á Udacity
+var donuts = [
+    { type: "Jelly", cost: 1.22 },
+    { type: "Chocolate", cost: 2.45 },
+    { type: "Cider", cost: 1.59 },
+    { type: "Boston Cream", cost: 5.99 }
+];
 
+// your code goes here
+donuts.forEach(function(donuts) {
+    
+  console.log(donuts.type + " donuts cost $" + donuts.cost + " each"); 
+
+    
+});
 8. Eru öll eigindi (e. properties) í sömu röð og þeim var bætt í object, rökstuddu?
+nei integr fara first og byrja á lægstu tölunni svo komma strings í því röð sem það var addað í
+svo kemur symbols
 9. Útskýrðu hvað eftirfarandi kóði gerir.
 let user = { name: "John" };
 let admin = user;
-
+admin afritar refrenceið sem user notar fyrir objectið
 
 10. Afhverju virkar eftirfarandi?
 const user = {
@@ -75,3 +91,4 @@ const user = {
 };
 user.age = 25;
 alert(user.age); // 25
+þetta virkar afþvi að það ekkert age í objectinu og user.age byr til age inni objectið með gildinu 25
