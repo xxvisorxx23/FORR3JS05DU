@@ -15,3 +15,25 @@ f3.speed = 11;
 f2.speed = 12;
 f1.speed = 14;
  console.log(f3,f2,f1)
+ 
+ 
+ 
+ class Ship {
+  constructor(name, speed, life) {
+    this.name = name;
+    this.speed = 10
+    this.life = 10
+  }
+  get fly() {
+    return this.calcfly;
+  } 
+   calcfly() {
+
+      return this.speed + 1; 
+    }
+    
+}
+
+let f1 = new Ship("f1");
+let f2 = new Ship("f2")
+console.log(Ship.fly)
