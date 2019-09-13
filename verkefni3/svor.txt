@@ -1,3 +1,5 @@
+//nafn: Kristján Ingi Ragnarsson
+
 //1
 //a)
 function Geimfluga(name, speed, life) {
