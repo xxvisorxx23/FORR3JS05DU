@@ -1,5 +1,4 @@
 //nafn: Kristján Ingi Ragnarsson
-
 //1
 //a)
 function Geimfluga(name, speed, life) {
@@ -24,6 +23,11 @@ Geimfluga.prototype.fly = function(add) {
 f3.fly(1);
 f2.fly(1);
 f1.fly(1);
+//1 
+ 
+ 
+ 
+ 
  
 //2 class 
  class Ship {
@@ -50,4 +54,4 @@ f1.speed = 14;
 f1.fly(1)
 f2.fly(1)
 f3.fly(1)
-
+//2
